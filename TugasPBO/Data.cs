@@ -13,20 +13,17 @@ namespace TugasPBO
 
         public Data()
         {
-            guitar = new List<Gitar>;
+            guitar = new List<Gitar>();
         }
-        internal string brand { get; }
-        internal string model { get; }
-        internal string wood { get; }
-        internal double harga { get; }
+        internal string brand { get; set; }
+        internal string model { get; set; }
+        internal string wood { get; set; }
+        internal double harga { get; set; }
         public void addGitar(double harga, string brand, string model, string wood)
         {
             Gitar gitars = new Gitar(harga, brand, model, wood);
             guitar.Add(gitars);
         }
-
-        public overide List<String> gitars()
-        private static void writeinven()
         public Gitar search(Gitar searchGitar)
         {
             for (int i = 0; i < guitar.Count; i++)

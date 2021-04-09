@@ -7,9 +7,9 @@ namespace TugasPBO
     public class Gitar
     {
         internal double harga { get; set; }
-        internal string brand { get; }
-        internal string model { get; }
-        internal string wood { get; }
+        internal string brand { get; set; }
+        internal string model { get; set; }
+        internal string wood { get; set; }
 
         public Gitar(double harga, string brand, string model, string wood)
         {
@@ -18,6 +18,7 @@ namespace TugasPBO
             this.model = model;
             this.wood = wood;
         }
+
 
 
     }
